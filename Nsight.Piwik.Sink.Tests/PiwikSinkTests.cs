@@ -84,8 +84,8 @@ namespace Nsight.Piwik.Sink.Tests
 
             await telemetryProvider.Activity.BeginSessionAsync(session);
 
-            var visitorIdHash =
-                Hex.ToHexString(DigestUtilities.CalculateDigest("MD5", Encoding.UTF8.GetBytes(session.UniqueVisitorId)));
+            //  MD5 hash of a unique visitor ID, truncated to 16 chars.
+            var visitorIdHash = "72027364e9fc12df";
 
             Assert.IsNotNull(sink.Session);
             Assert.AreEqual(session.FirstVisit.Value, sink.Session.FirstVisit.Value);

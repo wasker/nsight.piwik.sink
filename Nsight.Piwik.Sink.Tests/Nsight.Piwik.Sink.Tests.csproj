@@ -41,8 +41,8 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Moq, Version=4.5.8.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moq.4.5.8\lib\net45\Moq.dll</HintPath>
+    <Reference Include="Moq, Version=4.5.9.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.5.9\lib\net45\Moq.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Nsight.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -50,7 +50,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Nsight.Piwik.Api, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nsight.Piwik.Api.1.1.0\lib\portable46-net451+win81\Nsight.Piwik.Api.dll</HintPath>
+      <HintPath>..\packages\Nsight.Piwik.Api.1.2.0\lib\portable46-net451+win81\Nsight.Piwik.Api.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

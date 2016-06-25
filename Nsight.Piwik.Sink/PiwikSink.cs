@@ -73,8 +73,9 @@ namespace Nsight.Piwik.Sink
             string visitorIdHash = null;
             if (!string.IsNullOrEmpty(session.UniqueVisitorId))
             {
-                visitorIdHash = 
-                    Hex.ToHexString(DigestUtilities.CalculateDigest("MD5", Encoding.UTF8.GetBytes(session.UniqueVisitorId)));
+                visitorIdHash = Hex
+                    .ToHexString(DigestUtilities.CalculateDigest("MD5", Encoding.UTF8.GetBytes(session.UniqueVisitorId)))
+                    .Substring(0, 16);
             }
 
             using (await padlock.WriterLockAsync())
